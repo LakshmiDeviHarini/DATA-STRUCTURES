@@ -1,0 +1,27 @@
+# finding whether duplicate elements present or not
+class duplicate
+{
+    public static void main(String args[])
+    {
+        boolean flag=false;
+        int a[]={34,67,5};
+        
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=i+1;j<a.length;j++)
+            {
+                if(a[i]==a[j])
+                {
+                    System.out.println("duplicate found");
+                    flag=true;
+                }
+            }
+        }
+        if(flag==false)
+        {
+            System.out.println("duplicate not found");
+        }
+        
+    }
+    
+}
